@@ -117,10 +117,6 @@ gap: 15px;
   cursor: pointer;
   gap: 5px;
 }
-/*.search-form__label:has(:focus-visible) {
-  outline: 1px solid #fff;
-  outline-offset: 1px;
-}*/
 .search-form__pseudo-checkbox {
   justify-self: center;
   align-self: center;
@@ -142,7 +138,6 @@ gap: 15px;
 .search-form__submit-button{
   width: 194px;
 }
-
 .content__details {
   display: flex;
   flex-direction: column;
@@ -208,7 +203,6 @@ text-decoration: none;
  text-transform: uppercase;
 }
 .content__video-card-description-container {
-
   max-width: 200px;
   color: #fff;
 }
@@ -226,14 +220,4 @@ text-decoration: none;
   background-color: transparent;
   cursor: pointer;
   border: 1px solid;
-}
-.button:focus {
-  outline: none;
-}
-.button:focus-visible {
-  outline: 1px solid #fff;
-  outline-offset: 1px;
-}
-.button:hover {
-  text-decoration: underline;
 }
