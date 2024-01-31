@@ -39,9 +39,17 @@ ul,
 ol {
   list-style: none;
 }
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  inline-size: 1px;
+  block-size: 1px;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
 .content{
   display: flex;
-  width: 100%;
   align-items: end;
   justify-content: center;
   width: 1140px;
@@ -52,25 +60,58 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin-top: 80px;
-  gap: 30px;
 }
 .result__video-container{
   position: relative;
+  height: 386px;
+  width: 711px;
 }
 .result__video {
-  width: 711px;
-  min-height: 386px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 .search-form{
   display: flex;
   justify-content: space-between;
 }
-/*search-form__fieldset
-search-form__fieldset-title
-search-form__label
-search-form__label-text 
-visually-hidden
+.search-form__fieldset{
+  display: flex;
+  flex-direction: column;
+  border: none;
+  gap: 5px;
+}
+.search-form__fieldset-title{
+font-size: 18px;
+line-height: 21.6px;
+font-weight: 400;
+color: #fff;
+font-family: Fira Sans Condensed;
+}
+.search-form__textfield{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.6px;
+  font-family: Fira Sans Condensed;
+  border: none;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  width: 225px;
+  height: 27px;
+  background-color: transparent;
+}
+.search-form__textfield::placeholder{
+
+}
+.search-form__textfield:active{
+
+}
+.search-form__textfield:focus{
+
+}
+/*search-form__label
+search-form__label-text
 search-form__checkbox-list
 search-form__pseudo-checkbox
 .button
@@ -88,7 +129,7 @@ search-form__submit-button*/
   font-weight: 700;
   font-size: 75px;
   line-height: 70.5px;
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   text-transform: uppercase;
   color: #fff;
 }
@@ -102,6 +143,7 @@ search-form__submit-button*/
   height: 299px;
   overflow-y: auto;
   gap: 30px;
+  height: 298px;
 }
 .content__video-card{
   display: flex;
@@ -116,7 +158,9 @@ search-form__submit-button*/
 }
 .content__video-card-title{
   color: #fff;
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-style: normal;
   font-size: 30px;
+  font-weight: 700;
+ text-transform: uppercase;
 }
