@@ -104,11 +104,9 @@ ol {
   border-left: 1px solid #fff;
   padding-left: 1px;
 }
-
 .search-form__textfield:focus {
   outline: none;
 }
-
 .search-form__checkbox-list {
   display: flex;
   gap: 15px;
@@ -188,7 +186,6 @@ ol {
 .content__card-link:focus-visible {
   border: 1px solid #fff;
 }
-
 .content__video-card {
   display: flex;
   flex-direction: row;
