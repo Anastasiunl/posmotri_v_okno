@@ -169,6 +169,12 @@ ol {
   overflow-y: auto;
   height: 298px;
 }
+.content__list-item {
+ margin-bottom: 30px;
+}
+.content__list-item:last-child {
+  margin-bottom: 0px;
+ }
 .content__list-item:has(.content__card-link_current) {
   background-color: #545050;
 }
@@ -184,7 +190,8 @@ ol {
   outline: none;
 }
 .content__card-link:focus-visible {
-  border: 1px solid #fff;
+  outline: 1px solid #fff;
+  outline-offset: 2px;
 }
 .content__video-card {
   display: flex;
