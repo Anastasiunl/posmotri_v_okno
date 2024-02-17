@@ -186,8 +186,7 @@ ol {
   outline: none;
 }
 .content__card-link:focus-visible {
-  outline: 1px solid #fff;
-  outline-offset: 2px;
+  border: 1px solid #fff;
 }
 
 .content__video-card {
